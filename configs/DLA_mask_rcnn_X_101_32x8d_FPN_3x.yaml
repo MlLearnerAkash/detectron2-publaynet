@@ -2,7 +2,7 @@ _BASE_: "Base-RCNN-FPN.yaml"
 MODEL:
   MASK_ON: True
 #  WEIGHTS: "detectron2://ImageNetPretrained/FAIR/X-101-32x8d.pkl"
-  WEIGHTS: "detectron2://COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x/139653917/model_final_2d9806.pkl"
+  WEIGHTS: "/home/akash/ws/layout-segmentation-yolo/detectron2/weights/model_final_trimmed.pth" #"detectron2://COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x/139653917/model_final_2d9806.pkl"
   PIXEL_STD: [57.375, 57.120, 58.395]
   ROI_HEADS:
     NUM_CLASSES: 5
